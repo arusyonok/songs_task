@@ -1,0 +1,13 @@
+    {% include 'pagination.html' %}
+    <ol>
+        {% for song in songs %}
+            <li>
+                <ul>
+                {% for key, value in song.items() %}
+                <li>{{ key }} : {{ value }}</li>
+                {% endfor %}
+                </ul>
+            </li>
+        {% endfor %}
+    </ol>
+    {% include 'pagination.html' %}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Songs App</title>
+        <style>
+            body {
+                background: rgba(164, 164, 164, 0.15);
+            }
+			.main {
+                padding: 0px;
+				margin: 0px auto;
+                width:960px;
+			}
+            table {
+				border-spacing: 0px;
+			}
+			tr, td{
+				padding: 20px
+			}
+            .song {
+                padding-top: 40px;
+                background: rgba(164, 164, 164, 0.4);
+                min-height: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <h2>A truly ugly design</h2>
+            <div class="song">
+                {% include page ~ '.html' %}
+            </div>
+        </div>
+    </body>
+</html>
